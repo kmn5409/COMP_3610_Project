@@ -90,13 +90,13 @@ for file_ in range(1,len(files)):
     #num = to_string(files,file_)
     #if(file_ == 1001 or file_ == 2001):
     
-    
+    '''    
     if(file_ == 6001):
         X_train = read_input(files[num])
         y_train = read_labels(output_files[num])
         break
         #continue
-     
+    ''' 
 
     if(file_ in values_):
         X_train = read_input(files[num])
