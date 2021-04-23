@@ -79,19 +79,24 @@ points = height*width
 num = 0
 X_train = read_input(files[num])
 y_train = read_labels(output_files[num])
-#model = SGDClassifier(loss='log',fit_intercept=False)
-model = SGDClassifier(loss='hinge', penalty='l2')
+model = SGDClassifier(loss='log',fit_intercept=False)
+#logistic regression
+#model = SGDClassifier(loss='hinge', penalty='l2')
+#linear svm
 
 values_ = [1001,2001,3001,4001,5001,6001,7001,8001]
 for file_ in range(1,len(files)):
     num+=1
     #num = to_string(files,file_)
     #if(file_ == 1001 or file_ == 2001):
-    if(file_ == 3001):
+    
+    
+    if(file_ == 6001):
         X_train = read_input(files[num])
         y_train = read_labels(output_files[num])
         break
         #continue
+     
 
     if(file_ in values_):
         X_train = read_input(files[num])
@@ -111,13 +116,15 @@ for file_ in range(1,len(files)):
         model_log = model.partial_fit(X_train,y_train,classes=np.unique(y_train))
         #break
 
+print('Model trained on ' + str(file_) + ' patches')
 #model = SGDClassifier(loss='log',fit_intercept=False)
 model_log = model.partial_fit(X_train,y_train,classes=np.unique(y_train))
 
 print(X_train.shape)
 print(y_train.shape)
-pickle.dump(model_log, open('linearsvm_' + str(file_) + '_images_' +'.sav', 'wb'))
+pickle.dump(model_log, open('logistic_regression_3_' + str(file_) + '_images_' +'.sav', 'wb'))
 
 end_time = datetime.now()
 print('\nDuration: {}'.format(end_time - start_time))
 print (str(end_time))
+

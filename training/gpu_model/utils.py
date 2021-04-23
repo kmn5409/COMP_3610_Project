@@ -42,7 +42,7 @@ def get_input_image_names(list_names, directory_name, if_train=True):
             #nmask = 'gt_' + filenames
             nmask = filenames
             #fl_msk = directory_name + '/train_gt/' + '{}.TIF'.format(nmask)
-            fl_msk = directory_name + '/output_images/' + 'output_' + '{}.TIF'.format(nmask)
+            fl_msk = directory_name + '/testing_output_images/' + 'testing_output_' + '{}.TIF'.format(nmask)
             list_msk.append(fl_msk)
 
             fl_img_red = directory_name + '/training_images/' + 'full_color_training_' +'{}.TIF'.format(nred)
