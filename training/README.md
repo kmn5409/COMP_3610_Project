@@ -18,4 +18,4 @@ To train the linear support vector machine model we run
 python3 train_svm.py
 ```
 
-Next we go into the gpu_model/ folder
+Next we need to run the code in the jupyter notebook Road_Detection
