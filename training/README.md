@@ -9,7 +9,7 @@ python3 make_train.py
 After we can go about training one of our models, this being the logistic regression model by running
 
 ```
-python3 train_2.py
+python3 train_lr.py
 ```
 
 To train the linear support vector machine model we run
@@ -17,3 +17,5 @@ To train the linear support vector machine model we run
 ```
 python3 train_svm.py
 ```
+
+Next we go into the gpu_model/ folder
