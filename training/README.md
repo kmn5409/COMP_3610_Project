@@ -18,7 +18,7 @@ To train the linear support vector machine model we run
 python3 train_svm.py
 ```
 
-Next we need to run the code in the jupyter notebook Road_Detection
+Next we need to run the code in the jupyter notebook Road_Detection which was implemented in Google Colab so the files in this folder and the model/ folder will need to be uploaded
 
 After we move onto the model_interaction/ folder at the root of this repository
 
