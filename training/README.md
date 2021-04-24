@@ -19,3 +19,11 @@ python3 train_svm.py
 ```
 
 Next we need to run the code in the jupyter notebook Road_Detection
+
+After we move onto the model_interaction/ folder at the root of this repository
+
+```
+cd ../
+```
+
+if you are on ubuntu and using the command line to move back up

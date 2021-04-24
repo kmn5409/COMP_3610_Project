@@ -8,3 +8,4 @@ python3 run.py
 to go about downloading the data
 
 Next we go into the training folder to go about training our model
+
